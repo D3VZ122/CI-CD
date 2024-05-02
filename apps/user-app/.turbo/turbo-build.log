@@ -1,0 +1,44 @@
+
+> docs@1.0.0 build
+> next build
+
+   ▲ Next.js 14.1.4
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./app/lib/auth.ts
+56:13  Warning: JWT_SECRET is not listed as a dependency in turbo.json  turbo/no-undeclared-env-vars
+
+./components/AddMoneyCard.tsx
+4:10  Warning: 'Center' is defined but never used.  no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ ✓ Generating static pages (9/9) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ λ /                                    146 B          84.5 kB
+├ ○ /_not-found                          881 B          85.3 kB
+├ λ /api/auth/[...nextauth]              0 B                0 B
+├ λ /api/user                            0 B                0 B
+├ ○ /dashboard                           146 B          84.5 kB
+├ ○ /transactions                        146 B          84.5 kB
+└ λ /transfer                            1.2 kB         85.6 kB
++ First Load JS shared by all            84.4 kB
+  ├ chunks/1dd3208c-08aa46e5b0326fc6.js  53.4 kB
+  ├ chunks/997-95fea116fdcf3366.js       29 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
