@@ -13,6 +13,7 @@ Attempted import error: 'PrismaClient' is not exported from '@repo/db/client' (i
 Import trace for requested module:
 ./app/api/user/route.ts
 
+Compiler server unexpectedly exited with code: null and signal: SIGTERM
  ✓ Compiled successfully
    Linting and checking validity of types ...
 Failed to compile.
